@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Riddle Master - ডাউনলোড করো</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1020;
+    --card: #1a1c33;
+    --accent: #7c5cff;
+    --accent2: #22d3ee;
+    --text: #f4f4fb;
+    --muted: #a3a6c7;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f5f5ff;
+      --card: #ffffff;
+      --text: #1b1d33;
+      --muted: #5c5f7a;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    font-family: 'Noto Sans Bengali', 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 48px; }
+  .hero { text-align: center; padding: 28px 0 24px; }
+  .icon {
+    width: 96px; height: 96px; margin: 0 auto 18px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 48px; box-shadow: 0 10px 30px rgba(124, 92, 255, 0.35);
+  }
+  h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
+  .tagline { color: var(--muted); font-size: 1.05rem; }
+  .btn {
+    display: inline-block; margin-top: 24px;
+    padding: 16px 36px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff; font-weight: 600; font-size: 1.1rem;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(124, 92, 255, 0.4);
+    transition: transform 0.15s ease;
+  }
+  .btn:active { transform: scale(0.97); }
+  .note { margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+  h2 { font-size: 1.3rem; margin: 40px 0 16px; }
+  .features { display: grid; gap: 14px; grid-template-columns: 1fr; }
+  @media (min-width: 560px) { .features { grid-template-columns: 1fr 1fr; } }
+  .feature {
+    background: var(--card); border-radius: 16px; padding: 20px;
+    border: 1px solid rgba(124, 92, 255, 0.15);
+  }
+  .feature .emoji { font-size: 1.8rem; margin-bottom: 8px; }
+  .feature h3 { font-size: 1.05rem; margin-bottom: 4px; }
+  .feature p { color: var(--muted); font-size: 0.95rem; }
+  .small-grid { display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); }
+  .chip {
+    background: var(--card); border-radius: 14px; padding: 14px 16px;
+    font-size: 0.95rem; text-align: center;
+    border: 1px solid rgba(124, 92, 255, 0.15);
+  }
+  .steps { background: var(--card); border-radius: 16px; padding: 20px 24px; }
+  .steps ol { padding-left: 20px; color: var(--muted); }
+  .steps li { margin: 8px 0; }
+  footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <section class="hero">
+    <div class="icon">🧩</div>
+    <h1>Riddle Master</h1>
+    <p class="tagline">ধাঁধা, কুইজ আর জ্ঞানের খেলা। নিজের বুদ্ধি পরীক্ষা করো আর কয়েন জেতো!</p>
+
+    <!-- APK লিংক এখানে বসাও -->
+    <a class="btn" id="downloadBtn" href="https://github.com/davids-riddle/Riddle-Master-IQN-apk/releases/latest/download/riddle_master_player.1.apk" download>এখনই ডাউনলোড করো</a>
+    <p class="note">Android ডিভাইসের জন্য · Unknown sources থেকে ইনস্টল করতে হবে</p>
+    <div class="steps" style="margin-top:18px;text-align:left;">
+      <strong>Facebook-এ ডাউনলোড না হলে:</strong>
+      <ol>
+        <li>উপরের ডান কোনায় থাকা <strong>তিন বিন্দু (⋮)</strong> চাপো।</li>
+        <li><strong>Open in Chrome</strong> বেছে নাও।</li>
+        <li>Chrome-এ খুলে আবার <strong>ডাউনলোড</strong> বাটনে চাপো।</li>
+      </ol>
+    </div>
+  </section>
+
+  <h2>প্রধান ফিচার</h2>
+  <div class="features">
+    <div class="feature">
+      <div class="emoji">🧩</div>
+      <h3>ধাঁধা খেলুন</h3>
+      <p>নতুন রহস্য সমাধান করে কয়েন জিতুন।</p>
+    </div>
+    <div class="feature">
+      <div class="emoji">🏆</div>
+      <h3>Riddle Quiz</h3>
+      <p>নির্ধারিত সময়ে শুরু হওয়া কুইজে অংশ নাও। এন্ট্রি ফি মাত্র ৫০ কয়েন।</p>
+    </div>
+    <div class="feature">
+      <div class="emoji">🌍</div>
+      <h3>World News</h3>
+      <p>বিশ্বের খবর নিয়ে প্রশ্ন করো, AI উত্তর দেবে।</p>
+    </div>
+    <div class="feature">
+      <div class="emoji">🕌</div>
+      <h3>নিজেকে জানুন</h3>
+      <p>কুরআন ও হাদিসের আলোকে আত্মশুদ্ধির জন্য।</p>
+    </div>
+  </div>
+
+  <h2>আরও যা আছে</h2>
+  <div class="small-grid">
+    <div class="chip">🎮 অফলাইন মিনি-গেম</div>
+    <div class="chip">🪙 কয়েন ব্যবস্থা</div>
+    <div class="chip">✉️ মেসেজ</div>
+    <div class="chip">📊 রেকর্ড</div>
+    <div class="chip">🌙 থিম</div>
+    <div class="chip">👤 প্রোফাইল</div>
+  </div>
+
+  <h2>কীভাবে ইনস্টল করবে?</h2>
+  <div class="steps">
+    <ol>
+      <li>উপরের <strong>ডাউনলোড</strong> বাটনে চাপো।</li>
+      <li>ডাউনলোড শেষ হলে APK ফাইলটি খোলো।</li>
+      <li>প্রয়োজন হলে "Unknown sources" অনুমতি দাও।</li>
+      <li>ইনস্টল করে খেলা শুরু করো!</li>
+    </ol>
+  </div>
+
+  <footer>© Riddle Master</footer>
+</div>
+</body>
+</html>
